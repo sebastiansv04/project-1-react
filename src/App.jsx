@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import phrases from './phrases.json'
 import { bg1, bg2, bg3, bg4 } from './assets/img'
-import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi"
+import { BiSolidQuoteAltLeft} from 'react-icons/bi'
+import { BiSolidQuoteAltRight } from 'react-icons/bi'
 import './App.css'
 
 const images = [bg1, bg2, bg3, bg4]
