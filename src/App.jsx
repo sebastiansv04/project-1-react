@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import phrases from './phrases.json'
 import { bg1, bg2, bg3, bg4 } from './assets/img'
-import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from '../react-icons/bi';
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 import './App.css'
 
 const images = [bg1, bg2, bg3, bg4]
@@ -28,9 +28,12 @@ function App() {
 				<blockquote className="card">
 					<div className="card__body">
 						<p className="card__text">
-							<BiSolidQuoteAltLeft className='card__quote' />
-							{'  '}{phrase}{'  '}
-							<BiSolidQuoteAltRight className='card__quote' />
+							<RiDoubleQuotesL
+							className='card__quote' />
+							{'  '}
+							{phrase}
+							{'  '}
+							<RiDoubleQuotesR className="card__quote" />
 						</p>
 					</div>
 				</blockquote>
