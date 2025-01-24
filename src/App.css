@@ -23,7 +23,7 @@ body {
 
 .card {
   max-width: 600px;
-  height: 250px;
+  height: 260px;
   background-image: url('/rectangle.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,7 +34,7 @@ body {
 }
 
 .card__body {
-  padding: 0 1.2em;
+  padding: 0 1.1em;
 }
 
 .title {
@@ -46,13 +46,14 @@ body {
 }
 
 .card__text {
+  font-size: clamp(0.65rem, 4vw, 1rem);
   text-align: center;
   margin: 0;
-  color: #222;
+  color: #333;
 }
 
 .card__quote {
-  font-size: 30px;
+  font-size: 15px;
   color: #777;
 }
 
@@ -72,5 +73,11 @@ body {
 
   &:hover {
     background-color: #c7b0b050;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .card__quote {
+    font-size: 25px;
   }
 }
